@@ -1,0 +1,219 @@
+/* ==============================
+   Green Natural - Animation CSS
+   ============================== */
+
+/* Fade Animation */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero h2,
+.hero p,
+.hero .btn {
+  animation: fadeUp 1.2s ease;
+}
+
+/* Floating Animation */
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.box {
+  animation: floating 4s ease-in-out infinite;
+}
+
+/* Glass Hover */
+
+.box:hover {
+  background: rgba(255, 255, 255, 0.15);
+
+  backdrop-filter: blur(25px);
+}
+
+/* Button Glow */
+
+.btn {
+  animation: glow 2s infinite;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px #6cff8f;
+  }
+
+  50% {
+    box-shadow: 0 0 35px #6cff8f;
+  }
+
+  100% {
+    box-shadow: 0 0 10px #6cff8f;
+  }
+}
+
+/* WhatsApp */
+
+.whatsapp {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.08);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Navigation Hover */
+
+nav a {
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+
+  bottom: -5px;
+
+  height: 3px;
+
+  width: 0%;
+
+  background: #6cff8f;
+
+  transition: 0.4s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Liquid Background */
+
+body::before {
+  content: "";
+
+  position: fixed;
+
+  width: 600px;
+
+  height: 600px;
+
+  background: #00ff99;
+
+  filter: blur(180px);
+
+  opacity: 0.15;
+
+  top: -200px;
+
+  left: -200px;
+
+  border-radius: 50%;
+
+  animation: move1 10s infinite alternate;
+
+  z-index: -1;
+}
+
+body::after {
+  content: "";
+
+  position: fixed;
+
+  width: 500px;
+
+  height: 500px;
+
+  background: #00c3ff;
+
+  filter: blur(180px);
+
+  opacity: 0.12;
+
+  bottom: -180px;
+
+  right: -150px;
+
+  border-radius: 50%;
+
+  animation: move2 10s infinite alternate;
+
+  z-index: -1;
+}
+
+@keyframes move1 {
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(200px, 150px);
+  }
+}
+
+@keyframes move2 {
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(-180px, -120px);
+  }
+}
+
+/* Hero Title */
+
+.hero h2 {
+  letter-spacing: 2px;
+
+  text-shadow: 0 0 30px rgba(0, 255, 120, 0.6);
+}
+
+/* Product Card Hover */
+
+.product-card {
+  transition: 0.5s;
+
+  transform-style: preserve-3d;
+}
+
+.product-card:hover {
+  transform: rotateY(8deg) rotateX(8deg) scale(1.05);
+}
+
+/* Image Hover */
+
+img {
+  transition: 0.5s;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
