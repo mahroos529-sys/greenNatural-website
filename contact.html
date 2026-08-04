@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Contact | Green Natural</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animation.css" />
+
+    <style>
+      .contact-page {
+        padding: 120px 8%;
+      }
+
+      .contact-page h1 {
+        text-align: center;
+
+        font-size: 48px;
+
+        color: #6cff8f;
+
+        margin-bottom: 40px;
+      }
+
+      .contact-box {
+        display: grid;
+
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+        gap: 40px;
+      }
+
+      .info {
+        background: rgba(255, 255, 255, 0.08);
+
+        padding: 30px;
+
+        border-radius: 20px;
+
+        backdrop-filter: blur(20px);
+      }
+
+      .info h2 {
+        margin-bottom: 20px;
+
+        color: #6cff8f;
+      }
+
+      .info p {
+        margin: 15px 0;
+
+        font-size: 18px;
+      }
+
+      .form {
+        background: rgba(255, 255, 255, 0.08);
+
+        padding: 30px;
+
+        border-radius: 20px;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+
+        padding: 15px;
+
+        margin: 12px 0;
+
+        border: none;
+
+        border-radius: 12px;
+
+        font-size: 16px;
+      }
+
+      textarea {
+        height: 140px;
+
+        resize: none;
+      }
+
+      button {
+        width: 100%;
+
+        padding: 15px;
+
+        background: #6cff8f;
+
+        border: none;
+
+        border-radius: 50px;
+
+        font-size: 18px;
+
+        font-weight: bold;
+
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #4cff75;
+      }
+
+      .map {
+        margin-top: 60px;
+
+        border-radius: 20px;
+
+        overflow: hidden;
+      }
+
+      .float {
+        position: fixed;
+
+        right: 25px;
+
+        bottom: 25px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 15px;
+
+        z-index: 999;
+      }
+
+      .float a {
+        width: 60px;
+
+        height: 60px;
+
+        border-radius: 50%;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        font-size: 28px;
+
+        text-decoration: none;
+
+        color: white;
+
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      }
+
+      .call {
+        background: #007bff;
+      }
+
+      .whats {
+        background: #25d366;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <h1>GREEN NATURAL</h1>
+
+        <p>Food Beverages & Dairy Products</p>
+      </div>
+
+      <nav>
+        <a href="index.html">Home</a>
+
+        <a href="products.html">Products</a>
+
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="contact-page">
+      <h1>Contact Us</h1>
+
+      <div class="contact-box">
+        <div class="info">
+          <h2>Office</h2>
+
+          <p>📍 Paramakudi, Ramanathapuram</p>
+
+          <p>📞 04564 223300</p>
+
+          <p>📱 9659391865</p>
+
+          <p>📧 greennaturalfoodbeverages@gmail.com</p>
+        </div>
+
+        <div class="form">
+          <h2>Send Enquiry</h2>
+
+          <form>
+            <input type="text" placeholder="Your Name" />
+
+            <input type="tel" placeholder="Mobile Number" />
+
+            <input type="email" placeholder="Email" />
+
+            <textarea placeholder="Message"></textarea>
+
+            <button type="submit">Send Enquiry</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="map">
+        <iframe
+          src="https://maps.google.com/maps?q=Paramakudi&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          width="100%"
+          height="450"
+          style="border: 0"
+        >
+        </iframe>
+      </div>
+    </section>
+
+    <div class="float">
+      <a href="tel:04564223300" class="call">📞</a>
+
+      <a href="https://wa.me/919659391865" class="whats">💬</a>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
