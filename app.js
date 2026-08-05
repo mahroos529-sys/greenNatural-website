@@ -97,3 +97,20 @@ if (heroTitle) {
 
 // Welcome message
 console.log("🍹 Green Natural Website Loaded Successfully!");
+// Mobile Menu
+
+function openMenu() {
+  let nav = document.getElementById("navbar");
+
+  nav.classList.toggle("active");
+}
+
+// Dark Light Mode
+
+let theme = document.getElementById("theme");
+
+if (theme) {
+  theme.onclick = function () {
+    document.body.classList.toggle("light");
+  };
+}
